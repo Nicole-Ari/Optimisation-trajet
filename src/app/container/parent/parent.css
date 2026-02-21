@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "aquire";
+  src: url("/assets/font/AquireBold-8Ma60.otf") format("opentype");
+}
+@font-face {
+  font-family: "gottam-bold";
+  src: url("/assets/font/GothamRnd-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "gottam-light";
+  src: url("/assets/font/GothamRnd-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "gottam-medium";
+  src: url("/assets/font/GothamRnd-Medium.otf") format("opentype");
+}
+.parent {
+  background-image: url("/assets/image/grid-dot.png");
+  background-size: contain;
+  height: 100vh;
+  position: relative;
+  font-family: gottam-ligth, sans-serif;
+}
+
+.parent .logo {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5%;
+  font-family: aquire, sans-serif;
+}
+.parent .btn-logo {
+  letter-spacing: 3px;
+}
+.parent .btn-logo {
+  color: yellow;
+  font-size: 1.2rem;
+}
+.parent .welcome-part {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.parent .wlc-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+.parent .wlc-first-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.parent .wlc-first-text > h1 {
+  position: relative;
+  font-family: gottam-medium, sans-serif;
+  z-index: 1000;
+}
+.parent .wlc-first-text > h1 > span {
+  font-family: aquire, sans-serif;
+  position: relative;
+}
+.parent .wlc-first-text > h1 > span {
+  color: yellow;
+}
+.parent .wlc-first-text > h1 > span::before {
+  content: "";
+  position: absolute;
+  background-image: url("/assets/image/brush-removebg-preview.png");
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 180%;
+  height: 100%;
+  top: -50%;
+  left: -32%;
+  padding: 30px;
+  mix-blend-mode: luminosity;
+  z-index: -100;
+}
+.parent .wlc-first-text > h1 > span {
+  padding-left: 50px;
+}
+.parent .btn-start {
+  font-family: gottam-bold, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

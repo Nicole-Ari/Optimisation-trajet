@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "gottam-bold";
+  src: url("/assets/font/GothamRnd-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "gottam-light";
+  src: url("/assets/font/GothamRnd-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: "gottam-medium";
+  src: url("/assets/font/GothamRnd-Medium.otf") format("opentype");
+}
+.search-path .outil-item {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  column-gap: 5px;
+  width: 100%;
+  height: fit-content;
+  transition: color 0.3s, background 0.3s;
+  border-radius: 0.75rem;
+  padding: 10px;
+  position: relative;
+  font-family: gottam-light, sans-serif;
+}
+.search-path h5 {
+  font-family: gottam-bold, sans-serif;
+}
+.search-path .outil-item .outil-text {
+  display: flex;
+  align-items: center;
+  top: 12px;
+  left: 35px;
+  position: absolute;
+}
+
+.search-path .outil-item:hover {
+  cursor: pointer;
+  background: white;
+  color: #0d6efd;
+}
+.search-path .clicked {
+  background: white;
+  color: #0d6efd;
+}

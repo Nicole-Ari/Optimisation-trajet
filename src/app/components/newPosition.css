@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "gottam-bold";
+  src: url("/assets/font/GothamRnd-Bold.otf") format("opentype");
+}
+.new-position {
+  background: rgba(13, 110, 253, 0.8);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  filter: drop-shadow(2px 4px 2px #0d6efd);
+}
+.new-position .circle-form input[type="text"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 0;
+  text-align: center;
+  background: #0d6efd;
+  border: 1px solid white;
+  color: white;
+  width: fit-content;
+  outline: none;
+  font-family: gottam-bold;
+}
+.new-position .circle-form {
+  padding: 20px;
+}
+.new-position .circle-form input:disabled {
+  pointer-events: none;
+  text-align: center;
+  width: fit-content;
+  border: 1px solid white;
+  user-select: none;
+  background: #0d6efd;
+}
