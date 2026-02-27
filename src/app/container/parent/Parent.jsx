@@ -1,6 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import "./parent.css";
-import Button from "react-bootstrap/button";
+import Button from "react-bootstrap/Button";
 function Parent() {
   const Navigate = useNavigate();
   const handleClick = () => {
